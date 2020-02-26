@@ -20,6 +20,7 @@ git pull origin master --allow-unrelated-histories				将远程仓库拉到本�
 git clone <ssh/https>											将远程仓库克隆到本地
 git branch														列出所有分支,并用*号显示当前分支
 git branch <branch>												新建分支
-git checkout <branch>											切换分支
-git checkout -b <branch>										创建新分支,然后切换到这个分支
-
+git checkout <branch> / git switch <branch>						切换分支
+git checkout -b <branch> / git switch -c <branch>				创建新分支,然后切换到这个分支
+git merge <branch>												合并指定分支到当前分支
+git branch -d <branch>											删除指定分支
