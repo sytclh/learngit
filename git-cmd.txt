@@ -1,0 +1,14 @@
+git init 						初始化Git项目
+git status 						显示本地仓库的状态,如未跟踪的文件,修改的文件没有提交到暂存库,提交到暂存库的文件没有提交到本地库,或者一切正常
+git restore <file> 				将file文件的修改回退到上次提交状态
+git add <file>  				将file文件添加到暂存区
+git restore --staged <file>		将file文件从暂存区去除
+git commit -m "xxx"				将暂存区的文件提交到本地库,并附带提交说明
+git diff <file>					将当前file文件与暂存区的file文件进行比较
+git log --pretty=oneline		显示从最近到最远的提交日志(--pretty=oneline)可以省略
+git reset --hard HEAD^			版本回退到上一版
+git reset --hard HEAD^^			版本回退到上上一版
+git reset --hard HEAD~100		版本回退到上100版
+git reset --hard <commit id>	只要当前控制台没有关闭就可以回到未来某个版本
+git reflog						记录每一次的命令(可以查找任意时刻的命令)
+cat <file.txt>					查看文件内容
