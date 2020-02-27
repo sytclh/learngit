@@ -7,7 +7,7 @@ git commit -m "xxx"												将暂存区的文件提交到版本库,并附带
 git diff <file>													将当前file文件与暂存区的file文件进行比较
 git diff --cached <file>										将暂存区file文件与版本库最新版本file文件比较
 git diff HEAD -- <file>											将工作区的file文件与版本库最新版本的file文件比较
-git log --pretty=oneline										显示从最近到最远的提交日志(--pretty=oneline)可以省略
+git log --graph --pretty=oneline --abbrev-commit				显示从最近到最远的提交日志(--graph:显示分支图;--pretty=oneline简化日志信息)
 git reset --hard HEAD^											版本回退到上一版
 git reset --hard HEAD^^											版本回退到上上一版
 git reset --hard HEAD~100										版本回退到上100版
